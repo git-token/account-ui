@@ -1,0 +1,47 @@
+{
+  "name": "gittoken-account-ui",
+  "version": "0.0.1",
+  "description": "GitToken Account User Interface",
+  "main": "./src/index.js",
+  "scripts": {
+    "start:dev": "npx webpack-dev-server --hot --inline",
+    "build:ui": "npx webpack --config webpack.config.js",
+    "build:src": "npx babel ./src/ --out-dir ./dist/ --plugins transform-react-jsx"
+  },
+  "keywords": [
+    "GitToken",
+    "Ethereum",
+    "ERC20",
+    "Token"
+  ],
+  "author": "Ryan Tate <ryan.tate@gittoken.io>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-inline-import": "^2.0.5",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-runtime": "^6.23.0",
+    "chai": "^4.0.1",
+    "source-map-loader": "^0.2.1",
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.5.0"
+  },
+  "dependencies": {
+    "gittoken-react-components": "0.0.16",
+    "gittoken-reducers": "0.0.57",
+    "history": "^4.7.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-icons": "^2.2.7",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "react-router-redux": "^4.0.8",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "worker-loader": "^1.1.0"
+  }
+}
