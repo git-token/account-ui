@@ -1,6 +1,6 @@
 {
   "name": "gittoken-account-ui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "GitToken Account User Interface",
   "main": "./src/index.js",
   "scripts": {
