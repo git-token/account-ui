@@ -1,0 +1,7 @@
+version: '3.0'
+services:
+  account_ui:
+    ports:
+      - 1329:8080
+    build:
+      context: .

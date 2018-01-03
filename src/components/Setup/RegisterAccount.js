@@ -10,7 +10,7 @@ import {
 } from 'react-bootstrap'
 import FaCheck from 'react-icons/lib/fa/check'
 
-import ProfileIcon from '../ProfileIcon'
+import ProfileIcon from '../Account/ProfileIcon'
 
 
 class RegisterAccountComponent extends Component {
@@ -79,9 +79,9 @@ class RegisterAccountComponent extends Component {
   render() {
     const { Account: { address, profile } } = this.props
 
-    // const { username, _json: { avatar_url } } = profile
-    const avatar_url = "https://avatars2.githubusercontent.com/u/2837196?v=4"
-    const username = "Ryanmtate"
+    const { username, _json: { avatar_url } } = profile
+    // const avatar_url = "https://avatars2.githubusercontent.com/u/2837196?v=4"
+    // const username = "Ryanmtate"
 
     return (
       <div>

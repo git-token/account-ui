@@ -14,7 +14,8 @@ import {
 } from 'react-bootstrap'
 
 import {
-  Account
+  Account,
+  Setup
 } from './components/index'
 
 ReactDOM.render(
@@ -24,7 +25,7 @@ ReactDOM.render(
           <Layout.Header />
           <Switch>
             <Route exact path={"/"} component={Account.Main}/>
-            <Route path={"/setup"} component={Account.Setup.Main}/>
+            <Route path={"/setup"} component={Setup.Main}/>
           </Switch>
         </Grid>
     </Provider>
